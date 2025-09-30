@@ -116,3 +116,120 @@ h1 {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: white;
 }
+
+.card-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.post {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.post-info {
+    flex: 1;
+}
+
+.username {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.timestamp {
+    font-size: 0.8rem;
+    color: #657786;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.post-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #657786;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #657786;
+}
+
+.error {
+    text-align: center;
+    padding: 20px;
+    color: #e0245e;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #657786;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
