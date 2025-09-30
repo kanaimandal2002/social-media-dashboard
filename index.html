@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Media Dashboard</h1>
+            <div class="controls">
+                <button class="btn btn-primary" id="refreshBtn">
+                    <i class="fas fa-sync-alt"></i> Refresh Feeds
+                </button>
+                <button class="btn btn-outline" id="settingsBtn">
+                    <i class="fas fa-cog"></i> Settings
+                </button>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <!-- Twitter Card -->
+            <div class="card twitter">
+                <div class="card-header">
+                    <i class="fab fa-twitter card-icon"></i>
+                    <h2 class="card-title">Twitter Feed</h2>
+                </div>
+                <div class="card-content" id="twitter-feed">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> Loading tweets...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reddit Card -->
+            <div class="card reddit">
+                <div class="card-header">
+                    <i class="fab fa-reddit card-icon"></i>
+                    <h2 class="card-title">Reddit Feed</h2>
+                </div>
+                <div class="card-content" id="reddit-feed">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> Loading posts...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facebook Card -->
+            <div class="card facebook">
+                <div class="card-header">
+                    <i class="fab fa-facebook card-icon"></i>
+                    <h2 class="card-title">Facebook Feed</h2>
+                </div>
+                <div class="card-content" id="facebook-feed">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> Loading posts...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Card -->
+            <div class="card instagram">
+                <div class="card-header">
+                    <i class="fab fa-instagram card-icon"></i>
+                    <h2 class="card-title">Instagram Feed</h2>
+                </div>
+                <div class="card-content" id="instagram-feed">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> Loading posts...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Social Media Dashboard &copy; 2025 | Connect all your feeds in one place</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
