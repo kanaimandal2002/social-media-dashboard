@@ -8,4 +8,4 @@ A responsive web application that aggregates social media feeds from multiple pl
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Real-time Updates**: Refresh functionality to load latest posts
 - **Platform-specific Styling**: Each social media card uses brand-appropriate colors and icons
-- **Clean UI**: Modern card-based layout with smooth animations
+
